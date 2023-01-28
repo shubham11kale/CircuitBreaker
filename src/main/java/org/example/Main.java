@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public class Main{
 
     public static void main(String[] args) {
-        List<String> listOfPeople = List.of("MK", "GK","Brook","SK","PK","DK");
+        List<String> listOfPeople = List.of("MK", "GK","Brook","SK","PK","DK", "TK", "BK", "CK", "LK", "SK", "SK");
         AgeService resAgeService = new AgeServiceImpl();
         FooService fooService = new FooService(resAgeService);
 

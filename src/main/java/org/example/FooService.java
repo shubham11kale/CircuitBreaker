@@ -18,7 +18,7 @@ public class FooService {
         CircuitBreakerConfig config = CircuitBreakerConfig.custom()
                 .slidingWindow(10, 5, CircuitBreakerConfig.SlidingWindowType.COUNT_BASED)
                 .automaticTransitionFromOpenToHalfOpenEnabled(true)
-                .failureRateThreshold(30)
+                .failureRateThreshold(70)
                 .permittedNumberOfCallsInHalfOpenState(3)
                 .waitDurationInOpenState(Duration.ofSeconds(10))
                 .build();
